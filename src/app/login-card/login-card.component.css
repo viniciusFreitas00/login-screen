@@ -1,0 +1,60 @@
+.login__card {
+  background-color: #fff;
+  height: 80vh;
+  width: 140vh;
+  border-radius: 10px;
+  box-shadow: #909090 2px 3px 20px 3px;
+}
+.card__left_side {
+  background: rgb(132, 34, 236);
+  background: linear-gradient(
+    137deg,
+    rgba(132, 34, 236, 1) 0%,
+    rgba(189, 121, 240, 1) 100%
+  );
+  width: 35%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  /* margin-top: 0;
+  margin: 10px; */
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  padding: 2px;
+  color: #fff;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  transform: scale(1.1);
+  transition-duration: 500ms;
+  caret-color: #fff;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.item label {
+  color: #fff;
+  transform: translateY(70%);
+  transform: scale(0.9);
+}
+
+.item:focus-within label {
+  transform: translateY(-20%);
+  transition-duration: 500ms;
+  /* color: #909090; */
+}
