@@ -5,7 +5,7 @@
   border-radius: 10px;
   box-shadow: #909090 2px 3px 20px 3px;
 }
-.card__left_side {
+.card__form {
   background: rgb(132, 34, 236);
   background: linear-gradient(
     137deg,
@@ -22,39 +22,51 @@
   justify-content: center;
 }
 
-input {
-  /* margin-top: 0;
-  margin: 10px; */
+.form__input {
+  width: 80%;
+}
+.form__input input {
   background: transparent;
   border: 0;
   border-bottom: 1px solid #fff;
   padding: 2px;
   color: #fff;
+  text-align: center;
+  width: 100%;
 }
 
-input:focus {
+.form__input input:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
   transform: scale(1.1);
-  transition-duration: 500ms;
+  transition-duration: 300ms;
   caret-color: #fff;
 }
 
-.item {
+.form__input {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 15px;
 }
 
-.item label {
+.form__input label {
   color: #fff;
   transform: translateY(70%);
-  transform: scale(0.9);
+  transition-duration: 200ms;
 }
 
-.item:focus-within label {
+.form__input:focus-within label {
   transform: translateY(-20%);
-  transition-duration: 500ms;
-  /* color: #909090; */
+  transition-duration: 300ms;
+}
+
+.label_selected {
+  transform: translateY(-20%) !important;
+}
+
+.checkbox label {
+  color: #fff;
+  font-size: small;
+  cursor: pointer;
 }

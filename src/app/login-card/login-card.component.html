@@ -1,12 +1,30 @@
 <div class="login__card">
-  <div class="card__left_side">
-    <div class="item">
-      <label for="email" class="email_label">E-Mail</label>
-      <input type="text" name="email" id="email" />
+  <form class="card__form">
+    <div class="form__input">
+      <label for="email" #email_label>E-Mail</label>
+      <input
+        type="text"
+        #email
+        id="email"
+        (blur)="handleInputBlur($event)"
+        value=""
+      />
     </div>
-    <div class="item">
-      <label for="password" id="password_label">Password</label>
-      <input type="text" name="password" id="password" />
+    <div class="form__input">
+      <label for="password" #password_label>Password</label>
+      <input
+        type="password"
+        id="password"
+        #password
+        (blur)="handleInputBlur($event)"
+      />
     </div>
-  </div>
+    <div style="margin-top: 10px;">
+      <div class="checkbox">
+        <input type="radio" id="forgot_pass" />
+        <span class="design"></span>
+        <label for="forgot_pass">Remember me</label>
+      </div>
+    </div>
+  </form>
 </div>
