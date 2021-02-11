@@ -3,7 +3,7 @@
   height: 80vh;
   width: 140vh;
   border-radius: 10px;
-  box-shadow: #909090 2px 3px 20px 3px;
+  box-shadow: rgba(0,0,0,0.7) 2px 3px 20px 3px;
 }
 .card__form {
   background: rgb(132, 34, 236);
@@ -65,8 +65,82 @@
   transform: translateY(-20%) !important;
 }
 
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
 .checkbox label {
   color: #fff;
   font-size: small;
   cursor: pointer;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  height: 15px !important;
+  width: 15px !important;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: solid 2px #fff;
+  border-radius: 50px;
+  padding: 2px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #fff;
+}
+
+#login_option {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+#login_option a {
+  text-decoration: none;
+  color: #fff;
+  font-size: small;
+  cursor: pointer;
+}
+#login_buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+}
+
+#login_buttons input {
+  text-decoration: none;
+  padding: 10px 30px;
+  color: #fff;
+  outline: none;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+#login_buttons input:hover {
+  transform: scale(1.1);
+  transition-duration: 300ms;
+}
+
+#login_buttons input:active {
+  transform: scale(0.95);
+  transition-duration: 300ms;
+}
+
+#sing_in_btn {
+  background-color: rgb(132, 34, 236);
+  border: 0;
+  box-shadow: #000 0 0 5px;
+}
+
+#sing_up_btn {
+  background-color: transparent;
+  border: solid 1px #fff;
+  /* box-shadow: #000 0 0 5px; */
 }
